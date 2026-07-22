@@ -57,7 +57,8 @@ NTHETA = 256
 LO, HI = 0.0, 0.9
 N_MONTAGE = 6
 AVERAGE = True
-
+N_RHO_POINTS = 60
+T0_MANUAL, T1_MANUAL = 0.0, 10.0
 
 # ---------------------------------------------------------------------------
 # Helpers ported from vortex_analysis.ipynb (unchanged math)
@@ -118,8 +119,8 @@ def fit_growth(t, a, lo=0.0, hi=0.9, wmin=5):
         for q in range(p + wmin - 1, ii.size):
             seg = ii[p:q + 1]; ts = t[seg]; ls = ll[seg]
             g, b = np.polyfit(ts, ls, 1)
-            if g <= 0:
-                continue
+            # if g <= 0:
+            #     continue
             pred = g * ts + b
             r2 = 1.0 - np.sum((ls - pred) ** 2) / max(np.sum((ls - ls.mean()) ** 2), 1e-30)
             score = r2 * np.sqrt(seg.size)
@@ -131,12 +132,25 @@ def fit_growth(t, a, lo=0.0, hi=0.9, wmin=5):
     mask = np.zeros_like(a, bool); mask[seg] = True
     return g, t0, t1, r2, mask
 
+def fit_growth_manual(t, a, t0, t1):
+    """Same return signature as fit_growth (g, t0, t1, r2, mask), but YOU pick
+    the window [t0, t1] instead of letting the auto-detector choose it."""
+    t = np.asarray(t, float); a = np.asarray(a, float)
+    mask = (t >= t0) & (t <= t1) & np.isfinite(a) & (a > 0)
+    if mask.sum() < 2:
+        return np.nan, np.nan, np.nan, np.nan, mask
+    ts = t[mask]; ls = np.log(a[mask])
+    g, b = np.polyfit(ts, ls, 1)
+    pred = g * ts + b
+    r2 = 1.0 - np.sum((ls - pred) ** 2) / max(np.sum((ls - ls.mean()) ** 2), 1e-30)
+    return g, ts[0], ts[-1], r2, mask
+
 
 def growth_rate_spectrum(A, t, lo=LO, hi=HI):
     mmax = A.shape[1] - 1
     gm = np.full(mmax + 1, np.nan); r2m = np.full(mmax + 1, np.nan)
     for m in range(1, mmax + 1):
-        g, _t0, _t1, r2, _mask = fit_growth(t, A[:, m], lo, hi)
+        g, _t0, _t1, r2, _mask = fit_growth_manual(t, A[:, m], T0_MANUAL, T1_MANUAL)
         gm[m], r2m[m] = g, r2
     return gm, r2m
 
@@ -230,7 +244,7 @@ def compute_mode_spectrum(run, field=FIELD, rho=RHO, limiter_rho=LIMITER_RHO,
             ring = run.ring_at(np.asarray(run.fh[field][k]), rho_eff)
         A[k] = mode_amplitudes(ring, mmax)
     A_tot = np.sqrt(np.sum(A[:, 1:] ** 2, axis=1))
-    g_tot, t0, t1, r2, band = fit_growth(run.t, A_tot, LO, HI)
+    g_tot, t0, t1, r2, band = fit_growth_manual(run.t, A_tot, T0_MANUAL, T1_MANUAL)
     return dict(A=A, A_tot=A_tot, g_tot=g_tot, t0=t0, t1=t1, r2=r2, band=band,
                 rho=rho_eff, averaged=average)
 
@@ -351,6 +365,81 @@ def find_rundir(outdir):
     candidates.sort(key=os.path.getmtime)
     return os.path.dirname(candidates[-1])
 
+def compute_radial_mode_spectrum(run, field=FIELD, limiter_rho=LIMITER_RHO,
+                                  n_rho_points=N_RHO_POINTS, mmax=MMAX):
+    """Radius-resolved poloidal spectrum for every frame: A_r_all[frame, i_rho, m].
+    Same [0.1, limiter_rho - 0.1] bounds convention as the averaged spectrum, just
+    keeping every rho as its own row instead of averaging them together."""
+    rho_grid = np.linspace(0.1, limiter_rho - 0.1, n_rho_points)
+    A_r_all = np.zeros((run.nf, n_rho_points, mmax + 1))
+    for k in range(run.nf):
+        field2d = np.asarray(run.fh[field][k])
+        rings = run.ring_at(field2d, rho_grid)          # (n_rho_points, ntheta)
+        for i in range(n_rho_points):
+            A_r_all[k, i] = mode_amplitudes(rings[i], mmax)
+    return dict(rho_grid=rho_grid, A_r_all=A_r_all, mmax=mmax)
+
+
+def plot_radial_spectrum_video(run, radial_spec, field, out_path):
+    """Interactive rho-vs-m surface with a frame slider + play/pause, saved as
+    standalone HTML (open in any browser -- no server needed)."""
+    try:
+        import plotly.graph_objects as go
+    except ImportError:
+        print(f"  [skip] radial_spectrum_3d.html: plotly not installed "
+              f"(pip install plotly)")
+        return
+
+    t = run.t
+    rho_grid = radial_spec["rho_grid"]
+    A_r_all = radial_spec["A_r_all"]           # (nf, n_rho, mmax+1)
+    m_axis = np.arange(radial_spec["mmax"] + 1)
+    zmax = A_r_all.max() if A_r_all.size else 1.0
+    nf = A_r_all.shape[0]
+
+    k0 = 0
+    fig = go.Figure(
+        data=[go.Surface(
+            x=rho_grid, y=m_axis, z=A_r_all[k0].T,      # z[i,j] ~ y[i], x[j] -> transpose (rho, m) -> (m, rho)
+            colorscale="Viridis", cmin=0, cmax=zmax,
+            colorbar=dict(title=f"|a_m|  ({field})"),
+            hovertemplate="rho=%{x:.3f}<br>m=%{y}<br>|a_m|=%{z:.3e}<extra></extra>",
+        )],
+        frames=[
+            go.Frame(
+                data=[go.Surface(x=rho_grid, y=m_axis, z=A_r_all[k].T,
+                                  colorscale="Viridis", cmin=0, cmax=zmax)],
+                name=str(k),
+            )
+            for k in range(nf)
+        ],
+    )
+    fig.update_layout(
+        title=f"radius-resolved spectrum ({field}, {run.coord})",
+        scene=dict(xaxis_title="rho", yaxis_title="m",
+                   zaxis_title=f"|a_m|  ({field})", zaxis=dict(range=[0, zmax])),
+        width=850, height=700,
+        updatemenus=[dict(
+            type="buttons", showactive=False, y=0, x=0.05, xanchor="left", yanchor="top",
+            buttons=[
+                dict(label="Play", method="animate",
+                     args=[None, dict(frame=dict(duration=80, redraw=True), fromcurrent=True)]),
+                dict(label="Pause", method="animate",
+                     args=[[None], dict(frame=dict(duration=0, redraw=False), mode="immediate")]),
+            ],
+        )],
+        sliders=[dict(
+            active=k0, currentvalue=dict(prefix="frame: "),
+            steps=[
+                dict(method="animate",
+                     args=[[str(k)], dict(mode="immediate", frame=dict(duration=0, redraw=True))],
+                     label=f"{k} (t={t[k]:.2f})")
+                for k in range(nf)
+            ],
+        )],
+    )
+    fig.write_html(out_path, include_plotlyjs="cdn")
+
 
 # ---------------------------------------------------------------------------
 # Main
@@ -421,8 +510,13 @@ def main():
                 plot_growth_vs_m(run, spec, FIELD, os.path.join(U_dir, "growth_vs_m.png"))
                 plot_evolution_montage(run, run.coord, os.path.join(U_dir, "evolution_montage.png"))
 
+                radial_spec = compute_radial_mode_spectrum(run)
+                plot_radial_spectrum_video(run, radial_spec, FIELD,
+                                            os.path.join(U_dir, "radial_spectrum_3d.html"))
+
                 t, W, tau = compute_tau_E(run, core_only=True)
                 tau_results.append((U, t, tau))
+
             except Exception as e:
                 print(f"  [error] {name}: {e}")
             finally:

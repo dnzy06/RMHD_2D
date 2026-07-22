@@ -1,0 +1,457 @@
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00016.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00017.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00018.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00019.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00020.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00021.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00022.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00023.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00024.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00025.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00026.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00027.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00028.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00029.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00030.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0001/trial_00031.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00032.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00033.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00034.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00035.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00036.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00037.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00038.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00039.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00040.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00041.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00042.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00043.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00044.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00045.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00046.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0002/trial_00047.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00048.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00049.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00050.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00051.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00052.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00053.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00054.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00055.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00056.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00057.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00058.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00059.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00060.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00061.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00062.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0003/trial_00063.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00064.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00065.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00066.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00067.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00068.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00069.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00070.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00071.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00072.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00073.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00074.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00075.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00076.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00077.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00078.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0004/trial_00079.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00080.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00081.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00082.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00083.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00084.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00085.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00086.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00087.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00088.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00089.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00090.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00091.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00092.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00093.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00094.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0005/trial_00095.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00096.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00097.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00098.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00099.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00100.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00101.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00102.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00103.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00104.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00105.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00106.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00107.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00108.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00109.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00110.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0006/trial_00111.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00112.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00113.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00114.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00115.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00116.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00117.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00118.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00119.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00120.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00121.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00122.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00123.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00124.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00125.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00126.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0007/trial_00127.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00128.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00129.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00130.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00131.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00132.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00133.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00134.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00135.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00136.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00137.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00138.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00139.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00140.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00141.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00142.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0008/trial_00143.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00144.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00145.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00146.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00147.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00148.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00149.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00150.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00151.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00152.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00153.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00154.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00155.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00156.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00157.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00158.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0009/trial_00159.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00160.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00161.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00162.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00163.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00164.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00165.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00166.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00167.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00168.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00169.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00170.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00171.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00172.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00173.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00174.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0010/trial_00175.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00176.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00177.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00178.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00179.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00180.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00181.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00182.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00183.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00184.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00185.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00186.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00187.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00188.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00189.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00190.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0011/trial_00191.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00192.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00193.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00194.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00195.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00196.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00197.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00198.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00199.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00200.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00201.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00202.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00203.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00204.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00205.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00206.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0012/trial_00207.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00208.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00209.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00210.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00211.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00212.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00213.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00214.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00215.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00216.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00217.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00218.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00219.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00220.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00221.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00222.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0013/trial_00223.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00224.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00225.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00226.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00227.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00228.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00229.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00230.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00231.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00232.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00233.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00234.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00235.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00236.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00237.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00238.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0014/trial_00239.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00240.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00241.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00242.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00243.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00244.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00245.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00246.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00247.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00248.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00249.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00250.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00251.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00252.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00253.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00254.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0015/trial_00255.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00256.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00257.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00258.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00259.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00260.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00261.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00262.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00263.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00264.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00265.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00266.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00267.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00268.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00269.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00270.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0016/trial_00271.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 16 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00272.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00273.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00274.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00275.toml
+[node nid002793] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00276.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00277.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00278.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00279.toml
+[node nid002796] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00280.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00281.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00282.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00283.toml
+[node nid002797] 4 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00284.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00285.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00286.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0017/trial_00287.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+Running 12 config(s) across 4 already-allocated node(s), up to 4 at a time per node (16 total slots).
+[node nid002792] 3 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00288.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00289.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00290.toml
+[node nid002793] 3 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00291.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00292.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00293.toml
+[node nid002796] 3 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00294.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00295.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00296.toml
+[node nid002797] 3 config(s): /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00297.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00298.toml /global/u2/d/dnzy06/project_dir/2D_sim/RMHD_2D/scan/bayesian_opt/configs/batch_0018/trial_00299.toml
+Waiting for all nodes to finish...
+All nodes done, all succeeded.
+ring_radii = [0.1, 0.825, 1.55, 2.275, 3.0]
+expected_nframes = 101 (from reference.toml [time])
+resumed: re-seeded optimizer with 16 completed trial(s)
+
+batch 1: 16 trial(s) (running against current salloc allocation)
+  trial 16: reward=0.000000  status=incomplete
+  trial 17: reward=0.000000  status=incomplete
+  trial 18: reward=1423.180562  status=ok
+  trial 19: reward=0.000000  status=incomplete
+  trial 20: reward=0.000000  status=incomplete
+  trial 21: reward=1526.448482  status=ok
+  trial 22: reward=1595.040944  status=ok
+  trial 23: reward=0.000000  status=incomplete
+  trial 24: reward=1316.546329  status=ok
+  trial 25: reward=1328.750184  status=ok
+  trial 26: reward=1599.807288  status=ok
+  trial 27: reward=0.000000  status=incomplete
+  trial 28: reward=1629.868213  status=ok
+  trial 29: reward=0.000000  status=incomplete
+  trial 30: reward=1526.747400  status=ok
+  trial 31: reward=0.000000  status=incomplete
+
+batch 2: 16 trial(s) (running against current salloc allocation)
+  trial 32: reward=1567.305703  status=ok
+  trial 33: reward=0.000000  status=incomplete
+  trial 34: reward=1486.891418  status=ok
+  trial 35: reward=1272.479103  status=ok
+  trial 36: reward=0.000000  status=incomplete
+  trial 37: reward=0.000000  status=incomplete
+  trial 38: reward=1494.626168  status=ok
+  trial 39: reward=0.000000  status=incomplete
+  trial 40: reward=1615.912584  status=ok
+  trial 41: reward=0.000000  status=incomplete
+  trial 42: reward=1517.454987  status=ok
+  trial 43: reward=0.000000  status=incomplete
+  trial 44: reward=1627.862295  status=ok
+  trial 45: reward=1629.875055  status=ok
+  trial 46: reward=0.000000  status=incomplete
+  trial 47: reward=0.000000  status=incomplete
+
+batch 3: 16 trial(s) (running against current salloc allocation)
+  trial 48: reward=1551.238298  status=ok
+  trial 49: reward=0.000000  status=incomplete
+  trial 50: reward=1629.873656  status=ok
+  trial 51: reward=1629.876232  status=ok
+  trial 52: reward=1629.866735  status=ok
+  trial 53: reward=1453.640832  status=ok
+  trial 54: reward=1629.876231  status=ok
+  trial 55: reward=1629.847154  status=ok
+  trial 56: reward=1629.858230  status=ok
+  trial 57: reward=1629.867504  status=ok
+  trial 58: reward=1629.875689  status=ok
+  trial 59: reward=1629.876225  status=ok
+  trial 60: reward=1629.862659  status=ok
+  trial 61: reward=0.000000  status=incomplete
+  trial 62: reward=0.000000  status=incomplete
+  trial 63: reward=1337.326933  status=ok
+
+batch 4: 16 trial(s) (running against current salloc allocation)
+  trial 64: reward=1629.876220  status=ok
+  trial 65: reward=1629.826507  status=ok
+  trial 66: reward=1629.876231  status=ok
+  trial 67: reward=1629.876232  status=ok
+  trial 68: reward=1629.876225  status=ok
+  trial 69: reward=1629.226490  status=ok
+  trial 70: reward=1629.856312  status=ok
+  trial 71: reward=1629.868842  status=ok
+  trial 72: reward=1629.876230  status=ok
+  trial 73: reward=1629.825310  status=ok
+  trial 74: reward=1629.876230  status=ok
+  trial 75: reward=1629.876212  status=ok
+  trial 76: reward=1629.822210  status=ok
+  trial 77: reward=1629.876232  status=ok
+  trial 78: reward=1629.876232  status=ok
+  trial 79: reward=1629.864382  status=ok
+
+batch 5: 16 trial(s) (running against current salloc allocation)
+  trial 80: reward=1629.841559  status=ok
+  trial 81: reward=1629.846532  status=ok
+  trial 82: reward=1629.081339  status=ok
+  trial 83: reward=1629.861808  status=ok
+  trial 84: reward=1629.876231  status=ok
+  trial 85: reward=1405.704174  status=ok
+  trial 86: reward=1629.252268  status=ok
+  trial 87: reward=1580.009910  status=ok
+  trial 88: reward=1629.850803  status=ok
+  trial 89: reward=1629.876218  status=ok
+  trial 90: reward=1629.852565  status=ok
+  trial 91: reward=1629.876083  status=ok
+  trial 92: reward=1629.863622  status=ok
+  trial 93: reward=1608.128184  status=ok
+  trial 94: reward=1629.876221  status=ok
+  trial 95: reward=1629.876227  status=ok
+
+batch 6: 16 trial(s) (running against current salloc allocation)
+  trial 96: reward=0.000000  status=incomplete
+  trial 97: reward=1568.059993  status=ok
+  trial 98: reward=1629.875689  status=ok
+  trial 99: reward=1543.933492  status=ok
+  trial 100: reward=1546.241312  status=ok
+  trial 101: reward=1629.876232  status=ok
+  trial 102: reward=1629.876233  status=ok
+  trial 103: reward=1383.547014  status=ok
+  trial 104: reward=1402.127754  status=ok
+  trial 105: reward=1629.870803  status=ok
+  trial 106: reward=1629.869265  status=ok
+  trial 107: reward=1549.527284  status=ok
+  trial 108: reward=1629.822280  status=ok
+  trial 109: reward=1629.876228  status=ok
+  trial 110: reward=1629.855927  status=ok
+  trial 111: reward=1598.910274  status=ok
+
+batch 7: 16 trial(s) (running against current salloc allocation)
+  trial 112: reward=1629.857062  status=ok
+  trial 113: reward=1623.867758  status=ok
+  trial 114: reward=1528.024726  status=ok
+  trial 115: reward=0.000000  status=incomplete
+  trial 116: reward=1629.857215  status=ok
+  trial 117: reward=1629.860739  status=ok
+  trial 118: reward=1470.110287  status=ok
+  trial 119: reward=1629.876231  status=ok
+  trial 120: reward=1458.599508  status=ok
+  trial 121: reward=1629.848636  status=ok
+  trial 122: reward=1618.266150  status=ok
+  trial 123: reward=1611.503246  status=ok
+  trial 124: reward=1629.862157  status=ok
+  trial 125: reward=1629.854435  status=ok
+  trial 126: reward=1629.859901  status=ok
+  trial 127: reward=1629.117014  status=ok
+
+batch 8: 16 trial(s) (running against current salloc allocation)
+  trial 128: reward=1612.517052  status=ok
+  trial 129: reward=1556.925384  status=ok
+  trial 130: reward=1629.856483  status=ok
+  trial 131: reward=1629.847996  status=ok
+  trial 132: reward=1629.856238  status=ok
+  trial 133: reward=1275.307796  status=ok
+  trial 134: reward=0.000000  status=incomplete
+  trial 135: reward=1629.864353  status=ok
+  trial 136: reward=1579.486786  status=ok
+  trial 137: reward=1629.865687  status=ok
+  trial 138: reward=1629.788258  status=ok
+  trial 139: reward=1617.248286  status=ok
+  trial 140: reward=1629.826683  status=ok
+  trial 141: reward=1629.826445  status=ok
+  trial 142: reward=1629.876216  status=ok
+  trial 143: reward=1629.789927  status=ok
+
+batch 9: 16 trial(s) (running against current salloc allocation)
+  trial 144: reward=1629.855264  status=ok
+  trial 145: reward=1629.860975  status=ok
+  trial 146: reward=1629.871573  status=ok
+  trial 147: reward=1629.876225  status=ok
+  trial 148: reward=0.000000  status=incomplete
+  trial 149: reward=1629.839092  status=ok
+  trial 150: reward=1629.876221  status=ok
+  trial 151: reward=1466.462031  status=ok
+  trial 152: reward=0.000000  status=incomplete
+  trial 153: reward=1629.803934  status=ok
+  trial 154: reward=1511.486837  status=ok
+  trial 155: reward=1629.843803  status=ok
+  trial 156: reward=1629.869170  status=ok
+  trial 157: reward=1629.838391  status=ok
+  trial 158: reward=1629.834418  status=ok
+  trial 159: reward=1629.835686  status=ok
+
+batch 10: 16 trial(s) (running against current salloc allocation)
+  trial 160: reward=1584.225763  status=ok
+  trial 161: reward=1629.876228  status=ok
+  trial 162: reward=1629.876222  status=ok
+  trial 163: reward=1629.876228  status=ok
+  trial 164: reward=1629.876223  status=ok
+  trial 165: reward=1596.730706  status=ok
+  trial 166: reward=1629.876229  status=ok
+  trial 167: reward=1384.633239  status=ok
+  trial 168: reward=1629.869664  status=ok
+  trial 169: reward=1586.558886  status=ok
+  trial 170: reward=1629.875838  status=ok
+  trial 171: reward=1629.875239  status=ok
+  trial 172: reward=1629.876230  status=ok
+  trial 173: reward=1629.869389  status=ok
+  trial 174: reward=1614.207971  status=ok
+  trial 175: reward=1592.427988  status=ok
+
+batch 11: 16 trial(s) (running against current salloc allocation)
+  trial 176: reward=1629.713059  status=ok
+  trial 177: reward=1617.136227  status=ok
+  trial 178: reward=1629.766748  status=ok
+  trial 179: reward=1629.861674  status=ok
+  trial 180: reward=1629.876215  status=ok
+  trial 181: reward=1629.846197  status=ok
+  trial 182: reward=1629.876227  status=ok
+  trial 183: reward=1629.876028  status=ok
+  trial 184: reward=1629.876196  status=ok
+  trial 185: reward=1629.872356  status=ok
+  trial 186: reward=1629.876231  status=ok
+  trial 187: reward=1397.856933  status=ok
+  trial 188: reward=1517.357958  status=ok
+  trial 189: reward=1629.876193  status=ok
+  trial 190: reward=1629.785038  status=ok
+  trial 191: reward=1629.868440  status=ok
+
+batch 12: 16 trial(s) (running against current salloc allocation)
+  trial 192: reward=1629.863502  status=ok
+  trial 193: reward=1629.846285  status=ok
+  trial 194: reward=1629.876230  status=ok
+  trial 195: reward=1629.859600  status=ok
+  trial 196: reward=1629.876230  status=ok
+  trial 197: reward=1629.876226  status=ok
+  trial 198: reward=1604.531001  status=ok
+  trial 199: reward=1629.865888  status=ok
+  trial 200: reward=1606.673731  status=ok
+  trial 201: reward=1620.820932  status=ok
+  trial 202: reward=1617.996416  status=ok
+  trial 203: reward=1629.864377  status=ok
+  trial 204: reward=1629.876231  status=ok
+  trial 205: reward=1629.869856  status=ok
+  trial 206: reward=1629.824829  status=ok
+  trial 207: reward=1628.953512  status=ok
+
+batch 13: 16 trial(s) (running against current salloc allocation)
+  trial 208: reward=1629.876116  status=ok
+  trial 209: reward=1629.876227  status=ok
+  trial 210: reward=1629.844130  status=ok
+  trial 211: reward=1629.863560  status=ok
+  trial 212: reward=1629.850723  status=ok
+  trial 213: reward=1629.865904  status=ok
+  trial 214: reward=1496.599281  status=ok
+  trial 215: reward=1629.876229  status=ok
+  trial 216: reward=1629.876228  status=ok
+  trial 217: reward=1629.843751  status=ok
+  trial 218: reward=1629.197361  status=ok
+  trial 219: reward=1629.876229  status=ok
+  trial 220: reward=1629.876233  status=ok
+  trial 221: reward=1629.876222  status=ok
+  trial 222: reward=1629.847797  status=ok
+  trial 223: reward=1629.876231  status=ok
+
+batch 14: 16 trial(s) (running against current salloc allocation)
+  trial 224: reward=1629.872014  status=ok
+  trial 225: reward=1624.915161  status=ok
+  trial 226: reward=1629.876227  status=ok
+  trial 227: reward=1629.874606  status=ok
+  trial 228: reward=1629.850258  status=ok
+  trial 229: reward=1629.849711  status=ok
+  trial 230: reward=1629.876214  status=ok
+  trial 231: reward=1629.876232  status=ok
+  trial 232: reward=1629.819224  status=ok
+  trial 233: reward=1629.854279  status=ok
+  trial 234: reward=1629.818252  status=ok
+  trial 235: reward=1475.715895  status=ok
+  trial 236: reward=1590.571192  status=ok
+  trial 237: reward=1629.872947  status=ok
+  trial 238: reward=1457.452199  status=ok
+  trial 239: reward=1581.235460  status=ok
+
+batch 15: 16 trial(s) (running against current salloc allocation)
+  trial 240: reward=1629.784954  status=ok
+  trial 241: reward=1629.763829  status=ok
+  trial 242: reward=1629.875579  status=ok
+  trial 243: reward=1629.525809  status=ok
+  trial 244: reward=1629.865345  status=ok
+  trial 245: reward=1629.876152  status=ok
+  trial 246: reward=1629.876230  status=ok
+  trial 247: reward=1629.876233  status=ok
+  trial 248: reward=0.000000  status=incomplete
+  trial 249: reward=1529.149854  status=ok
+  trial 250: reward=1568.639163  status=ok
+  trial 251: reward=1629.352941  status=ok
+  trial 252: reward=1629.831440  status=ok
+  trial 253: reward=1543.629921  status=ok
+  trial 254: reward=1629.866948  status=ok
+  trial 255: reward=1544.592002  status=ok
+
+batch 16: 16 trial(s) (running against current salloc allocation)
+  trial 256: reward=1629.876230  status=ok
+  trial 257: reward=1618.205353  status=ok
+  trial 258: reward=1629.871018  status=ok
+  trial 259: reward=1629.864724  status=ok
+  trial 260: reward=1463.662355  status=ok
+  trial 261: reward=1629.867168  status=ok
+  trial 262: reward=1629.876229  status=ok
+  trial 263: reward=1629.872512  status=ok
+  trial 264: reward=1625.316761  status=ok
+  trial 265: reward=1558.811710  status=ok
+  trial 266: reward=1629.836976  status=ok
+  trial 267: reward=1629.876219  status=ok
+  trial 268: reward=1629.853194  status=ok
+  trial 269: reward=1629.876224  status=ok
+  trial 270: reward=1629.876233  status=ok
+  trial 271: reward=1629.876230  status=ok
+
+batch 17: 16 trial(s) (running against current salloc allocation)
+  trial 272: reward=1629.876228  status=ok
+  trial 273: reward=1629.413242  status=ok
+  trial 274: reward=1629.876164  status=ok
+  trial 275: reward=1628.884162  status=ok
+  trial 276: reward=1629.860203  status=ok
+  trial 277: reward=1629.783777  status=ok
+  trial 278: reward=1629.876224  status=ok
+  trial 279: reward=1629.870046  status=ok
+  trial 280: reward=1617.208332  status=ok
+  trial 281: reward=1629.876231  status=ok
+  trial 282: reward=1629.876231  status=ok
+  trial 283: reward=1579.192200  status=ok
+  trial 284: reward=1616.753966  status=ok
+  trial 285: reward=1629.876125  status=ok
+  trial 286: reward=1629.876233  status=ok
+  trial 287: reward=1624.358420  status=ok
+
+batch 18: 12 trial(s) (running against current salloc allocation)
+  trial 288: reward=1629.873908  status=ok
+  trial 289: reward=1629.875710  status=ok
+  trial 290: reward=1629.865870  status=ok
+  trial 291: reward=1595.067143  status=ok
+  trial 292: reward=1500.645442  status=ok
+  trial 293: reward=1629.826926  status=ok
+  trial 294: reward=1629.868240  status=ok
+  trial 295: reward=1629.802966  status=ok
+  trial 296: reward=1629.797265  status=ok
+  trial 297: reward=1626.111346  status=ok
+  trial 298: reward=1629.585958  status=ok
+  trial 299: reward=1629.854479  status=ok
+
+============================================================
+BEST TRIAL SO FAR
+  trial_id : 220
+  reward   : 1629.876233
+  voltages : [263.3382, 76.7859, 127.0872, 204.9478, -34.7422]
+  outdir   : /pscratch/sd/d/dnzy06/plasma_sim_runs/bayesian_opt/trial_00220
+============================================================

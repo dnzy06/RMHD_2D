@@ -189,14 +189,16 @@ class Config:
         _cw = np.where(r <= p.limiter_radius, 1.0, np.exp(-((r - p.limiter_radius) / wd) ** 2))
         p.clamp_w = asarray(_cw[:, None])
 
-        # --- pressure source Q_p ---
+        # --- pressure source Q_p (zeroed beyond the limiter -- heating shouldn't
+        #     be injected into the loss/shadow region outside the confined plasma) ---
         Qp = self._ini.get("Qp", 0.0)
         if isinstance(Qp, str) and Qp == "gaussian":
             w = float(self._ini.get("Qp_width", self._ini.get("pres_width", 1.0))) / self._Lfac
             a = float(self._ini.get("Qp_amp", 0.0))
-            p.Qp_field = asarray((a * np.exp(-r * r / (w * w)))[:, None])
+            Qp_r = a * np.exp(-r * r / (w * w))
         else:
-            p.Qp_field = asarray(float(Qp))
+            Qp_r = np.full_like(r, float(Qp))
+        p.Qp_field = asarray(np.where(r <= p.limiter_radius, Qp_r, 0.0)[:, None])
 
         # --- initial pressure profile (r-Gaussian/parabolic) + seed perturbation ---
         ini = self._ini

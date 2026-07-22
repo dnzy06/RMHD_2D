@@ -50,6 +50,7 @@ NTHETA = 256
 LO, HI = 0.0, 0.9
 N_MONTAGE = 6
 AVERAGE = True
+N_RHO_POINTS = 60 
 
 
 # ---------------------------------------------------------------------------
@@ -89,6 +90,34 @@ def mode_amplitudes(ring, mmax):
     amp = np.abs(np.fft.rfft(ring) / N)
     amp[1:] *= 2.0
     return amp[: mmax + 1]
+
+def der_t(a, t):
+    """2nd-order central d/dt along axis 0, one-sided at the boundaries
+    (backend-agnostic: built with slicing + concatenate, no in-place update)."""
+    dt = t[1] - t[0]
+    tdt = 1 / (2 * dt)
+    inner = (a[2:] - a[:-2]) * tdt                   # (nf-2,)
+    top = ((a[1] - a[0]) * (2.0 * tdt))[None]        # forward difference
+    bot = ((a[-1] - a[-2]) * (2.0 * tdt))[None]      # backward difference
+    return np.concatenate([top, inner, bot], axis=0)
+
+def plot_instantaneous_gamma(run, spec, field, out_path):
+    """Instantaneous growth rate d/dt log(|a_m|) vs time, for m=1..MMAX
+    (m=0 excluded -- axisymmetric mode isn't part of the growth spectrum).
+    Uses semilogy -- negative gamma (decay/saturation phases) will be dropped
+    from the plot rather than shown, since log-scale can't represent them."""
+    t = run.t; A = spec["A"]
+    mmax = A.shape[1] - 1
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    for m in range(1, mmax + 1):
+        mask = A[:, m] > 0        # skip zero-amplitude frames (log(0) undefined)
+        gamma_t = der_t(np.log(A[mask, m]), t[mask])
+        ax.semilogy(t[mask], gamma_t, lw=1, alpha=0.7, label=f"m={m}")
+    ax.set_xlabel("t  (t_bar)")
+    ax.set_ylabel(r"instantaneous $\gamma_m$  [1/$\bar t$]")
+    ax.set_title(f"instantaneous growth rate ({field}, {_rho_label(spec)})")
+    ax.legend(fontsize=7, ncol=2)
+    fig.tight_layout(); fig.savefig(out_path, dpi=130); plt.close(fig)
 
 
 def fit_growth(t, a, lo=0.0, hi=0.9, wmin=5):
@@ -295,6 +324,21 @@ def plot_tau_E_comparison(tau_results, out_path):
     ax.legend(fontsize=8)
     fig.tight_layout(); fig.savefig(out_path, dpi=130); plt.close(fig)
 
+def plot_gamma_m1_comparison(gamma_m1_results, out_path):
+    """gamma_m1_results: list of (run_name, t, gamma_m1_t) -- one entry per run,
+    m=1 instantaneous growth rate overlaid across all runs. Labeled the same way
+    as tau_E_comparison: by each run's [output] outdir basename, not its .toml
+    config filename."""
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    colors = plt.cm.viridis(np.linspace(0, 1, max(len(gamma_m1_results), 1)))
+    for (run_name, t, gamma_t), c in zip(gamma_m1_results, colors):
+        ax.semilogy(t, gamma_t, lw=1.5, label=run_name, color=c)
+    ax.set_xlabel("t  (t_bar)")
+    ax.set_ylabel(r"instantaneous $\gamma_{m=1}$  [1/$\bar t$]")
+    ax.set_title("m=1 instantaneous growth rate -- run comparison")
+    ax.legend(fontsize=8)
+    fig.tight_layout(); fig.savefig(out_path, dpi=130); plt.close(fig)
+
 
 def find_rundir(outdir):
     """outdir/<jobid>/setup.h5 -- pick the most-recently-modified match."""
@@ -303,6 +347,81 @@ def find_rundir(outdir):
         return None
     candidates.sort(key=os.path.getmtime)
     return os.path.dirname(candidates[-1])
+
+def compute_radial_mode_spectrum(run, field=FIELD, limiter_rho=LIMITER_RHO,
+                                  n_rho_points=N_RHO_POINTS, mmax=MMAX):
+    """Radius-resolved poloidal spectrum for every frame: A_r_all[frame, i_rho, m].
+    Same [0.1, limiter_rho - 0.1] bounds convention as the averaged spectrum, just
+    keeping every rho as its own row instead of averaging them together."""
+    rho_grid = np.linspace(0.1, limiter_rho - 0.1, n_rho_points)
+    A_r_all = np.zeros((run.nf, n_rho_points, mmax + 1))
+    for k in range(run.nf):
+        field2d = np.asarray(run.fh[field][k])
+        rings = run.ring_at(field2d, rho_grid)          # (n_rho_points, ntheta)
+        for i in range(n_rho_points):
+            A_r_all[k, i] = mode_amplitudes(rings[i], mmax)
+    return dict(rho_grid=rho_grid, A_r_all=A_r_all, mmax=mmax)
+
+
+def plot_radial_spectrum_video(run, radial_spec, field, out_path):
+    """Interactive rho-vs-m surface with a frame slider + play/pause, saved as
+    standalone HTML (open in any browser -- no server needed)."""
+    try:
+        import plotly.graph_objects as go
+    except ImportError:
+        print(f"  [skip] {os.path.basename(out_path)}: plotly not installed "
+              f"(pip install plotly)")
+        return
+
+    t = run.t
+    rho_grid = radial_spec["rho_grid"]
+    A_r_all = radial_spec["A_r_all"]           # (nf, n_rho, mmax+1)
+    m_axis = np.arange(radial_spec["mmax"] + 1)
+    zmax = A_r_all.max() if A_r_all.size else 1.0
+    nf = A_r_all.shape[0]
+
+    k0 = 0
+    fig = go.Figure(
+        data=[go.Surface(
+            x=rho_grid, y=m_axis, z=A_r_all[k0].T,      # z[i,j] ~ y[i], x[j] -> transpose (rho, m) -> (m, rho)
+            colorscale="Viridis", cmin=0, cmax=zmax,
+            colorbar=dict(title=f"|a_m|  ({field})"),
+            hovertemplate="rho=%{x:.3f}<br>m=%{y}<br>|a_m|=%{z:.3e}<extra></extra>",
+        )],
+        frames=[
+            go.Frame(
+                data=[go.Surface(x=rho_grid, y=m_axis, z=A_r_all[k].T,
+                                  colorscale="Viridis", cmin=0, cmax=zmax)],
+                name=str(k),
+            )
+            for k in range(nf)
+        ],
+    )
+    fig.update_layout(
+        title=f"radius-resolved spectrum ({field}, {run.coord})",
+        scene=dict(xaxis_title="rho", yaxis_title="m",
+                   zaxis_title=f"|a_m|  ({field})", zaxis=dict(range=[0, zmax])),
+        width=850, height=700,
+        updatemenus=[dict(
+            type="buttons", showactive=False, y=0, x=0.05, xanchor="left", yanchor="top",
+            buttons=[
+                dict(label="Play", method="animate",
+                     args=[None, dict(frame=dict(duration=80, redraw=True), fromcurrent=True)]),
+                dict(label="Pause", method="animate",
+                     args=[[None], dict(frame=dict(duration=0, redraw=False), mode="immediate")]),
+            ],
+        )],
+        sliders=[dict(
+            active=k0, currentvalue=dict(prefix="frame: "),
+            steps=[
+                dict(method="animate",
+                     args=[[str(k)], dict(mode="immediate", frame=dict(duration=0, redraw=True))],
+                     label=f"{k} (t={t[k]:.2f})")
+                for k in range(nf)
+            ],
+        )],
+    )
+    fig.write_html(out_path, include_plotlyjs="cdn")
 
 
 # ---------------------------------------------------------------------------
@@ -329,6 +448,7 @@ def main():
 
     os.makedirs(plots_dir, exist_ok=True)
     tau_results = []
+    gamma_m1_results = []
     used_names = set()
 
     for tp in toml_paths:
@@ -359,10 +479,20 @@ def main():
         os.makedirs(run_dir_out, exist_ok=True)
 
         run = RunData(rundir)
+        run = RunData(rundir)
         try:
             spec = compute_mode_spectrum(run)
             plot_spectrum_growth(run, spec, FIELD, os.path.join(run_dir_out, "spectrum_growth.png"))
             plot_evolution_montage(run, run.coord, os.path.join(run_dir_out, "evolution_montage.png"))
+            plot_instantaneous_gamma(run, spec, FIELD, os.path.join(run_dir_out, "instantaneous_gamma.png"))
+
+            mask_m1 = spec["A"][:, 1] > 0
+            gamma_m1_t = der_t(np.log(spec["A"][mask_m1, 1]), run.t[mask_m1])
+            gamma_m1_results.append((run_name, run.t[mask_m1], gamma_m1_t))
+
+            radial_spec = compute_radial_mode_spectrum(run)
+            plot_radial_spectrum_video(run, radial_spec, FIELD,
+                                        os.path.join(run_dir_out, "radial_spectrum_3d.html"))
 
             t, W, tau = compute_tau_E(run, core_only=True)
             tau_results.append((run_name, t, tau))
@@ -375,6 +505,11 @@ def main():
         plot_tau_E_comparison(tau_results, os.path.join(plots_dir, "tau_E_comparison.png"))
     else:
         print("No completed runs found for any config -- no comparison plot written.")
+
+    if gamma_m1_results:
+        plot_gamma_m1_comparison(gamma_m1_results, os.path.join(plots_dir, "gamma_m1_comparison.png"))
+    else:
+        print("No completed runs found for any config -- no gamma_m1 comparison plot written.")
 
     print(f"\nDone. All plots under {plots_dir}")
 
